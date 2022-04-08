@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - Main function
  *
  * Return: 0 for success
  */
-
 int main(void)
 {  
 int n;
