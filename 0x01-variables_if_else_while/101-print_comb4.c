@@ -23,7 +23,7 @@ while (c2 < 58)
 putchar(c0);
 putchar(c1);
 putchar(c2);
-if (!(c0 == 55 && c2 == 58))
+if (!(c0 == 55 && c2 == 57 && c1 == 56))
 {
 putchar(',');
 putchar(' ');
