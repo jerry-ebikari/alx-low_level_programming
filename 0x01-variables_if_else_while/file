@@ -12,5 +12,6 @@ int character = 122;
 
 while (character > 96)
 putchar(character--);
+putchar('\n');
 return (0);
 }
