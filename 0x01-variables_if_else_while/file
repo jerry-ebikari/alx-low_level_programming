@@ -8,15 +8,12 @@
 
 int main(void)
 {
-int number = 0;
+int num = 48;
 
-while (number < 16)
+while (num < 58)
 {
-if (number < 10)
-putchar(48 + number++);
-else
-putchar(87 + number++);
+putchar(num++);
+(num % 58) && putchar(',') && putchar(' ');
 }
-putchar('\n');
 return (0);
 }
