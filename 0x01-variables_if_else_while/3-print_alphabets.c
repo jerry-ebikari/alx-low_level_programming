@@ -16,4 +16,5 @@ character = 65;
 while (character < 91)
 putchar(character++);
 putchar('\n');
+return 0;
 }
