@@ -12,5 +12,6 @@ int character = 97;
 
 while (character < 123)
 putchar(character++);
+putchar('\n');
 return (0);
 }
