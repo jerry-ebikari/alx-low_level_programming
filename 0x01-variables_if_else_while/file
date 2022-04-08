@@ -14,10 +14,8 @@ while (num < 58)
 {
 putchar(num++);
 if (num != 58)
-{
 putchar(',');
 putchar(' ');
-}
 }
 return (0);
 }
