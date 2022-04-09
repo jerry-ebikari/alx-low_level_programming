@@ -8,31 +8,46 @@
 
 int main(void)
 {
-int c0 = 48;
-int c1;
-int c2;
+int c11 = 48;
+int c12 = 48;
+int c21 = 48;
+int c22 = 49;
 
-while (c0 < 58)
+while (c11 < 58)
 {
-c1 = c0 + 1;
-while (c1 < 58)
+c12 = 48;
+while (c12 < 58)
 {
-c2 = c1 + 1;
-while (c2 < 58)
+if ((c21 >= 58 || c11 == c21) && c22 >= 58)
 {
-putchar(c0);
-putchar(c1);
-putchar(c2);
-if (!(c0 == 55 && c2 == 57 && c1 == 56))
+c21 = c11;
+c22 = c12 + 1;
+}
+else
+c21 = 48;
+while (c21 < 58)
+{
+if (c11 != c21)
+c22 = 48;
+while (c22 < 58)
+{
+putchar(c11);
+putchar(c12);
+putchar(' ');
+putchar(c21);
+putchar(c22);
+if (!(c11 == 57 && c12 == 56))
 {
 putchar(',');
 putchar(' ');
 }
-c2++;
+c22++;
 }
-c1++;
+c21++;
 }
-c0++;
+c12++;
+}
+c11++
 }
 putchar('\n');
 return (0);

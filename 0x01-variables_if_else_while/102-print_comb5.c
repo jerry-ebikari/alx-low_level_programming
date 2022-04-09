@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - Main function
  *
- * Return: Should be 0
- **/
-int main( )
+ * Return: 0 for success
+ */
+
+int main(void)
 {
 int c11 = 48;
 int c12 = 48;
@@ -16,7 +18,7 @@ while (c11 < 58)
 c12 = 48;
 while (c12 < 58)
 {
-if ((c21 >= 58 || c11 == c21) && c22 >=58)
+if ((c21 >= 58 || c11 == c21) && c22 >= 58)
 {
 c21 = c11;
 c22 = c12 + 1;
@@ -45,7 +47,7 @@ c21++;
 }
 c12++;
 }
-c11++;
+c11++
 }
 putchar('\n');
 return (0);
