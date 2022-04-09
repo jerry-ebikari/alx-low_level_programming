@@ -6,10 +6,7 @@
  */
 int main(void)
 {
-int c11 = 48;
-int c12 = 48;
-int c21 = 48;
-int c22 = 49;
+int c11 = 48, c12 = 48, c21 = 48, c22 = 49;
 
 while (c11 < 58)
 {
@@ -21,10 +18,12 @@ if ((c21 >= 58 || c11 == c21) && c22 >= 58)
 c21 = c11;
 c22 = c12 + 1;
 }
-else c21 = 48;
+else
+c21 = 48;
 while (c21 < 58)
 {
-if (c11 != c21) c22 = 48;
+if (c11 != c21)
+c22 = 48;
 while (c22 < 58)
 {
 putchar(c11);
